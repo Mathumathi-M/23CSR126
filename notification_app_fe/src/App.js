@@ -27,6 +27,11 @@ function App() {
 
   const [filter, setFilter] = useState('All');
 
+  const handleFilterChange = (newFilter) => {
+    setPage(1);
+    setFilter(newFilter);
+  };
+
   useEffect(() => {
     const loadNotifications = async () => {
       setLoading(true);
@@ -52,7 +57,7 @@ function App() {
 
       <FilterBar
         filter={filter}
-        setFilter={setFilter}
+        setFilter={handleFilterChange}
       />
 
       {

@@ -15,11 +15,11 @@ function NotificationCard({ item }) {
       <CardContent>
 
         <Typography variant="h6">
-          {item.Title || item.Type}
+          {item.Type}
         </Typography>
 
         <Typography>
-          {item.Description || item.Message || 'No description available.'}
+          {item.Message || item.Description || item.Title || 'No description available.'}
         </Typography>
 
         <Typography variant="body2">

@@ -51,24 +51,63 @@ const priorityMap = {
 const SAMPLE_NOTIFICATIONS = [
   {
     ID: 'temp-1',
-    Type: 'Placement',
-    Title: 'Temporary Placement Update',
-    Timestamp: new Date().toISOString(),
-    Description: 'This is fallback notification data used when upstream auth fails.'
+    Type: 'Result',
+    Message: 'mid-sem',
+    Timestamp: '2026-04-22T17:51:30'
   },
   {
     ID: 'temp-2',
-    Type: 'Result',
-    Title: 'Temporary Result Notification',
-    Timestamp: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
-    Description: 'Fallback data is returned to keep the endpoint working.'
+    Type: 'Placement',
+    Message: 'CSX Corporation hiring',
+    Timestamp: '2026-04-22T17:51:18'
   },
   {
     ID: 'temp-3',
     Type: 'Event',
-    Title: 'Temporary Event Notice',
-    Timestamp: new Date(Date.now() - 1000 * 60 * 10).toISOString(),
-    Description: 'Local mock notifications are returned until auth is corrected.'
+    Message: 'farewell',
+    Timestamp: '2026-04-22T17:51:06'
+  },
+  {
+    ID: 'temp-4',
+    Type: 'Result',
+    Message: 'mid-sem',
+    Timestamp: '2026-04-22T17:50:54'
+  },
+  {
+    ID: 'temp-5',
+    Type: 'Result',
+    Message: 'project-review',
+    Timestamp: '2026-04-22T17:50:42'
+  },
+  {
+    ID: 'temp-6',
+    Type: 'Result',
+    Message: 'external',
+    Timestamp: '2026-04-22T17:50:30'
+  },
+  {
+    ID: 'temp-7',
+    Type: 'Result',
+    Message: 'project-review',
+    Timestamp: '2026-04-22T17:50:18'
+  },
+  {
+    ID: 'temp-8',
+    Type: 'Event',
+    Message: 'tech-fest',
+    Timestamp: '2026-04-22T17:50:06'
+  },
+  {
+    ID: 'temp-9',
+    Type: 'Result',
+    Message: 'project-review',
+    Timestamp: '2026-04-22T17:49:54'
+  },
+  {
+    ID: 'temp-10',
+    Type: 'Placement',
+    Message: 'Advanced Micro Devices Inc. hiring',
+    Timestamp: '2026-04-22T17:49:42'
   }
 ];
 
